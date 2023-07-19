@@ -116,6 +116,7 @@ header {
 
 .contenedor__propuestas__img{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 350px;
     justify-content: space-evenly;
@@ -172,6 +173,7 @@ header {
 
 .contenedor__noticias{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -195,4 +197,67 @@ h5{
     margin-top: 100px;
     height: 300px;
     background-color: var(--color4);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.contenedorFooter{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contenedorSeccionesFooter{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemsRedes{
+    list-style: none;
+}
+
+.itemsContacto{
+    list-style: none;
+}
+
+.subtituloFooter{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.logoRedes{
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+.mapa{
+    width: 300px;
+    height: 200px;
+}
+
+.itemRedes{
+    margin-top: 10px;
+}
+
+
+
+
+/*Estilos Formulario*/
+
+.contenedorFormulario{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 50%;
 }
