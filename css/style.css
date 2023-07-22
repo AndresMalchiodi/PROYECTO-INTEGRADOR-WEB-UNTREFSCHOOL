@@ -14,10 +14,6 @@
     --color5: #EFF5F5;
 }
 
-.texto{
-    text-indent: 10px;
-}
-
 
 body{
     background-color: var(--color5);
@@ -46,7 +42,11 @@ header {
 .nav__item a{
     color: #ffffff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.nav__item a:hover{
+    color: var(--color1);
 }
 
 
@@ -103,6 +103,10 @@ header {
     box-shadow: 6px 6px 16px 0px var(--color1);
 }
 
+.texto{
+    text-indent: 10px;
+}
+
 .texto_info{
     width: 45%;
     height: 95%;
@@ -153,6 +157,10 @@ header {
     padding: 20px;
     font-size: 25px;
     color: var(--color4);
+}
+
+.titulo__card a:hover{
+    color: var(--color1);
 }
 
 .linkPropuesta{
@@ -289,6 +297,10 @@ h5{
     list-style: none;
 }
 
+.logoRedes:hover{
+    transform: scale(1.1);
+}
+
 .itemsContacto{
     list-style: none;
 }
@@ -339,14 +351,14 @@ form{
 
 
 
-/*Media Queries para pantallas iguales o mayores 320px*/
+/*Media Queries para pantallas menores a 768px*/
 
-@media (min-width: 320px) and (max-width: 767px){
+@media (max-width: 767px){
+
     body{
         display: block;
         margin: 0 auto;
     }
-
 
 
 /*Estilos barra de navegación*/
@@ -365,25 +377,24 @@ form{
 }
 
 .nav__item a{
-    font-size: 16px;
+    font-size: 20px;
 }
 
 
 /*Estilos de la seccion: banner*/
 
     .banner{
-    height: 200px;
+    height: 250px;
     }
     .banner__titulo{
         font-size: 40px;
     }
 
 
-
 /*Estilos de secciones de informacíon*/
 
     .subtitulo{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .info{
@@ -391,23 +402,32 @@ form{
     }
 
     .imagen_texto{
+        height: auto;
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
-        margin-top: 10px;
+        margin-top: 0%;
     }
 
     .img_info{
-            width: 95%;
-            height: 45%;
+            width: 100%;
+            border-radius: 0%;
+            height:200px;
             margin: 0;
+            box-shadow: none;
         }
 
     .texto_info{
-        width: 95%;
-        height: 45%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
         box-sizing: border-box;
-        font-size: 12px;
+        font-size: 16px;
+        box-shadow: none;
+        border-radius: 0%;
+        background-color: inherit;
+        flex-shrink: 0;
     }
 
     .imagen_texto2{
@@ -440,5 +460,106 @@ form{
         width: 100%;
         display: flex;
         justify-content: space-evenly;
+    }
+
+
+    /*Estilos formulario*/
+
+    form{
+        width: 85%;
+    }
+
+    }
+
+
+
+    /*Media Queries para pantallas desde 768px a 1199px */
+
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+
+        /*Estilos barra de navegación*/
+    .header{
+        padding: 15px;
+    }
+
+    .nav__items {
+        gap: 10px;
+    }
+
+    .nav__item{
+        padding: 5px;
+        border: 1px solid var(--color5);
+        border-radius: 10px;
+    }
+
+    .nav__item a{
+        font-size: 15px;
+    }
+
+
+    /*Estilos de la seccion: banner*/
+
+    .banner__titulo{
+        font-size: 60px;
+    }
+
+
+    /*Estilos de secciones de informacíon*/
+
+    .info{
+        margin-top: 30px;
+    }
+
+    .subtitulo{
+        font-size: 30px;
+    }
+
+    .imagen_texto{
+        margin-top: 20px;
+    }
+
+    .img_info{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .texto_info{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .texto{
+        font-size: 16px;
+    }
+    
+
+
+    /*Estilos footer*/
+
+    .footer{
+        margin-top: 50px;
+    }
+
+    .subtituloFooter{
+        font-size: 20px;
+    }
+
+    .itemRedes{
+        font-size: 16px;
+    }
+
+    .mapa{
+        width: 200px;
+        height: 200px;
+    }
+
+
+    /*Estilos formulario*/
+
+    form{
+        width: 75%;
     }
     }
