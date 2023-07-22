@@ -36,8 +36,9 @@ header {
 }
 
 .nav__items {
-    display: flex;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
 }
@@ -346,6 +347,26 @@ form{
         margin: 0 auto;
     }
 
+
+
+/*Estilos barra de navegación*/
+
+.header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav__items{
+    flex-direction: column;
+}
+
+.nav__item{
+    border-bottom: 1px solid var(--color5);
+}
+
+.nav__item a{
+    font-size: 16px;
+}
 
 
 /*Estilos de la seccion: banner*/
