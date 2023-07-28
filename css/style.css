@@ -40,9 +40,9 @@ header {
 }
 
 .nav__item a{
-    color: #ffffff;
     text-decoration: none;
     font-size: 25px;
+    color: #ffffff;
 }
 
 .nav__item a:hover{
@@ -53,20 +53,20 @@ header {
 /*Estilos de la seccion: banner*/
 
 .banner{
-    display: flex;
     width: 100%;
     height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(../multimedia/imagenes/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    align-items: center;
-    justify-content: center;
+    background-position: center;    
 }
 
 .banner__titulo{
-    color: #ffffff;
     font-size: 80px;
+    color: #ffffff;
 }
 
 
@@ -78,29 +78,29 @@ header {
 
 .subtitulo{
     padding: 15px;
-    font-size: 40px;
     background-color: var(--color2);
+    font-size: 40px;
     color: #ffffff;
 }
 
 .imagen_texto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     width: 100%;
     height: 500px;
     margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
 }
 
 .img_info{
     width: 45%;
     height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-left: 15px;
     border-radius: 5%;
     box-shadow: 6px 6px 16px 0px var(--color1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .texto{
@@ -110,14 +110,13 @@ header {
 .texto_info{
     width: 45%;
     height: 95%;
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 18px;
+    margin: 0 15px;
     border-radius: 5%;
     box-shadow: 6px 6px 16px 0px var(--color1);
-    padding: 15px 15px 10px 15px;
+    padding: 15px 15px 10px;
     background-color: #1f8a6f2a;
     overflow: auto;
+    font-size: 18px;
 }
 
 
@@ -139,10 +138,9 @@ header {
 /*Estilos de la sección: Propuesta educativa*/
 
 .contenedor__propuestas__img{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    /*height: 350px;*/
     justify-content: space-evenly;
 }
 
@@ -171,10 +169,10 @@ header {
 .propuestaEducativa__img{
     width: 200px;
     height: 200px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -216,18 +214,18 @@ header {
 }
 
 .card__noticias{
-    margin-top: 20px;
     width: 300px;
     height: 500px;
+    margin-top: 20px;
     padding: 10px;
+    border-radius: 5%;
+    box-shadow: 6px 6px 17px -4px var(--color1);
+    background-color: #1f8a6f2a;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 10px;
-    border-radius: 5%;
-    box-shadow: 6px 6px 17px -4px var(--color1);
-    background-color: #1f8a6f2a;
+    gap: 10px; 
 }
 
 h5{
@@ -241,45 +239,44 @@ h5{
 }
 
 .boton{
-        width: 50%;
-        padding: 12.5px 20px;
-        border: 0;
-        border-radius: 100px;
-        background-color: #2ba8fb;
-        color: #ffffff;
-        font-weight: Bold;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-    }
+    width: 50%;
+    padding: 12.5px 20px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
     
 .boton:hover {
-        background-color: var(--color2);
-        box-shadow: 0 0 20px var(--color3);
-        transform: scale(1.1);
-    }
+    background-color: var(--color2);
+    box-shadow: 0 0 20px var(--color3);
+    transform: scale(1.1);
+}
     
 .boton:active {
-        background-color: #3d94cf;
-        transition: all 0.25s;
-        -webkit-transition: all 0.25s;
-        box-shadow: none;
-        transform: scale(0.98);
-    }
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
 
 
 
 /*Estilos footer*/
 
 .footer{
-    margin-top: 100px;
     height: 300px;
+    margin-top: 100px;
     background-color: var(--color4);
     font-size: 20px;
     color: #ffffff;
 }
 
 .contenedorFooter{
-    /*width: 95%;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -306,8 +303,8 @@ h5{
 }
 
 .subtituloFooter{
-    padding: 10px;
     margin-bottom: 10px;
+    padding: 10px;
     font-size: 30px;
 }
 
@@ -332,8 +329,7 @@ h5{
 /*Estilos Formulario*/
 
 .contenedorFormulario{
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin: 60px 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,6 +383,7 @@ form{
     .banner{
     height: 250px;
     }
+
     .banner__titulo{
         font-size: 40px;
     }
@@ -404,31 +401,36 @@ form{
 
     .imagen_texto{
         height: auto;
+        margin-top: 0%;
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
-        margin-top: 0%;
+        
     }
 
     .img_info{
-            width: 100%;
-            border-radius: 0%;
-            height:200px;
-            margin: 0;
-            box-shadow: none;
-        }
+        width: 100%;
+        height:200px;
+        margin: 0;
+        border-radius: 0%; 
+        box-shadow: none;
+    }
 
     .texto_info{
-        display: flex;
-        flex-direction: column;
         width: 100%;
         height: auto;
-        box-sizing: border-box;
-        font-size: 16px;
-        box-shadow: none;
         border-radius: 0%;
+        box-shadow: none;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
         background-color: inherit;
         flex-shrink: 0;
+        font-size: 16px;
+    }
+
+    .texto{
+        margin-bottom: 10px;
     }
 
     .imagen_texto2{
@@ -439,12 +441,12 @@ form{
     /*Estilos footer*/
 
     .contenedorFooter{
-        flex-direction: column;
-        background-color: var(--color4);
         width: 100%;
-        font-size: 15px;
-        gap: 30px;
         padding-bottom: 20px;
+        background-color: var(--color4);
+        flex-direction: column;
+        gap: 30px;
+        font-size: 15px;
     }
 
     .contenedorSeccionesFooter{
@@ -453,8 +455,8 @@ form{
     }
 
     .subtituloFooter{
-        font-size: 20px;
         margin: 0;
+        font-size: 20px;
     }
 
     .itemsRedes{
@@ -480,6 +482,7 @@ form{
     @media (min-width: 768px) and (max-width: 1199px) {
 
         /*Estilos barra de navegación*/
+        
     .header{
         padding: 15px;
     }
@@ -521,8 +524,7 @@ form{
     }
 
     .img_info{
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 0 5px;
     }
 
     .texto_info{
@@ -563,4 +565,5 @@ form{
     form{
         width: 75%;
     }
+
     }
