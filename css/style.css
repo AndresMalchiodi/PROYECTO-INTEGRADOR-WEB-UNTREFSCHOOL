@@ -19,6 +19,7 @@ body{
     background-color: var(--color5);
 }
 
+
 /*Estilos del header*/
 
 header {
@@ -33,6 +34,7 @@ header {
 
 .nav__items {
     width: 100%;
+    padding: 0%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -292,6 +294,7 @@ h5{
 
 .itemsRedes{
     list-style: none;
+    padding: 0%;
 }
 
 .logoRedes:hover{
@@ -300,6 +303,7 @@ h5{
 
 .itemsContacto{
     list-style: none;
+    padding: 0%;
 }
 
 .subtituloFooter{
@@ -359,7 +363,23 @@ form{
 
 /*Estilos barra de navegación*/
 
-.header{
+.nav__header{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    font-size: 25px;
+}
+
+
+/*Menú alternativo no desplegable*/
+
+/*.header{
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -375,7 +395,7 @@ form{
 
 .nav__item a{
     font-size: 20px;
-}
+}*/
 
 
 /*Estilos de la seccion: banner*/
@@ -468,6 +488,19 @@ form{
 
     /*Estilos formulario*/
 
+    .nav__headerForm{
+        display: flex;
+    }
+
+    .nav__itemForm{
+        margin: 0%;
+        border-bottom: 1px solid var(--color5);
+    }
+
+    .nav__itemForm a{
+        font-size: 20px;
+    }
+
     form{
         width: 70%;
     }
@@ -476,10 +509,24 @@ form{
 
 
 
+
+    /*Menú desplegable oculto en pantallas iguales o mayores a 768px*/
+
+
+    @media screen and (min-width: 768px){
+        .dropdown-center{
+            display: none;
+        }
+    }
+
+
+
+
     /*Media Queries para pantallas desde 768px a 1199px */
 
 
     @media (min-width: 768px) and (max-width: 1199px) {
+
 
         /*Estilos barra de navegación*/
         
